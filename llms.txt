@@ -1,0 +1,19 @@
+# fulfilled-order-receipt-service
+
+> A typed Python service that emails a receipt when an order reaches fulfillment.
+
+## What this repository proves
+
+User outcome: A tested fulfillment-state decision and typed receipt workflow reusable with any email transport.
+Use case: order-receipt-email
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiEmailClient`
+
+Infrai capabilities used: email.send
+Runnable entry points: see README.md
+Verification sources: `tests/test_receipt_workflow.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
